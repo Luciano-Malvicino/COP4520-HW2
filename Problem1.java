@@ -89,7 +89,7 @@ public class Problem1 {
     Labyrinth labyrinth = new Labyrinth();
     Random random = new Random();
 
-    // Loop that randomly selects a thread (Guest) and starts it.
+    // Loop that randomly selects a thread (Guest) and starts it (enteres the labryinth).
     boolean[] hasEntered = new boolean[totalGuests];
     while (!allEntered(hasEntered)) {
       int guestIndex = random.nextInt(totalGuests);
